@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Se agregan archivos dentro de workflows: terraform.yml y main.yml
+
 ## 0.2.1
 
 - Se realizan arreglos en el archivo main.tf
