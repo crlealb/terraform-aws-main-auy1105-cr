@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "redes" {
-  source = "git::https://github.com/crlealb/terraform-aws-vpc-auy1105-cr.git?ref=0.1.0"
+  source = "git::https://github.com/crlealb/terraform-aws-vpc-auy1105-cr.git?ref=0.1.1"
 
   vpc_cidr_block       = var.vpc_cidr_block
   public_subnet_cidr_1 = var.public_subnet_cidr_1
