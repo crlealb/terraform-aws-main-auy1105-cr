@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "redes" {
-  source = "git::https://github.com/crlealb/terraform-aws-vpc-auy1105-cr.git?ref=0.1.1"
+  source = "git::https://github.com/crlealb/terraform-aws-vpc-auy1105-cr.git?ref=1.0.0"
 
   vpc_cidr_block       = var.vpc_cidr_block
   public_subnet_cidr_1 = var.public_subnet_cidr_1
@@ -26,7 +26,7 @@ module "redes" {
 }
 
 module "computo" {
-  source = "git::https://github.com/crlealb/terraform-aws-ec2-auy1105-cr.git?ref=0.1.0"
+  source = "git::https://github.com/crlealb/terraform-aws-ec2-auy1105-cr.git?ref=1.0.0"
 
   ami_id                = var.ami_id
   instance_type         = var.instance_type
@@ -40,7 +40,7 @@ module "computo" {
 }
 
 module "loadbalancer" {
-  source = "git::https://github.com/crlealb/terraform-aws-loadbalancer-auy1105-cr.git?ref=0.1.0"
+  source = "git::https://github.com/crlealb/terraform-aws-loadbalancer-auy1105-cr.git?ref=1.0.0"
 
   public_subnet_ids     = module.redes.public_subnet_ids
   vpc_id                = module.redes.vpc_id
@@ -54,7 +54,7 @@ module "loadbalancer" {
 }
 
 module "storage" {
-  source = "git::https://github.com/crlealb/terraform-aws-storage-auy1105-cr.git?ref=0.1.0"
+  source = "git::https://github.com/crlealb/terraform-aws-storage-auy1105-cr.git?ref=1.0.0"
 
   bucket_name  = var.bucket_name
   environment  = var.environment
