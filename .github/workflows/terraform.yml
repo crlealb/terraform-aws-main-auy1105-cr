@@ -25,7 +25,8 @@ jobs:
         run: terraform init
 
       - name: Run Terraform FMT
-        run: terraform fmt -check -recursive ${{ inputs.path }}
+        working-directory: ${{ inputs.path }}
+        run: terraform fmt -check -recursive
 
       - name: Run Terraform Validate
         working-directory: ${{ inputs.path }}
