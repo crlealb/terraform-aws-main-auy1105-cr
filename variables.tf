@@ -1,15 +1,5 @@
-variable "aws_region" {
-  description = "Región de AWS"
-  type        = string
-}
-
 variable "environment" {
   description = "Nombre del ambiente"
-  type        = string
-}
-
-variable "project_name" {
-  description = "Nombre del proyecto"
   type        = string
 }
 
