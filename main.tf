@@ -42,7 +42,7 @@ module "loadbalancer" {
 module "storage" {
   source = "git::https://github.com/crlealb/terraform-aws-storage-auy1105-cr.git?ref=1.0.0"
 
-  bucket_name  = var.bucket_name
-  environment  = var.environment
-  common_tags  = local.common_tags
+  bucket_name = var.bucket_name
+  environment = var.environment
+  common_tags = local.common_tags
 }

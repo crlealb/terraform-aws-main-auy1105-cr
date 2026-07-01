@@ -1,4 +1,4 @@
-﻿output "vpc_id" {
+output "vpc_id" {
   description = "ID de la VPC creada por el módulo de redes"
   value       = module.redes.vpc_id
 }
