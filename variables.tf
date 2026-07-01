@@ -3,6 +3,11 @@ variable "environment" {
   type        = string
 }
 
+variable "project_name" {
+  description = "Nombre del proyecto"
+  type        = string
+}
+
 variable "vpc_cidr_block" {
   description = "CIDR block para la VPC"
   type        = string
