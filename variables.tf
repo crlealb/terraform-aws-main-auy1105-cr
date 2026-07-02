@@ -38,11 +38,6 @@ variable "availability_zone_2" {
   type        = string
 }
 
-variable "ami_id" {
-  description = "ID de la AMI de Amazon Linux 2"
-  type        = string
-}
-
 variable "instance_type" {
   description = "Tipo de instancia EC2"
   type        = string
