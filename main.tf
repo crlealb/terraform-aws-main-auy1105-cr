@@ -14,7 +14,7 @@ module "redes" {
 module "computo" {
   source = "git::https://github.com/crlealb/terraform-aws-ec2-auy1105-cr.git?ref=1.0.0"
 
-  ami_id                = var.ami_id
+  #ami_id                = var.ami_id
   instance_type         = var.instance_type
   subnet_public_1_id    = module.redes.public_subnet_ids[0]
   security_group_web_id = module.redes.security_group_web_id

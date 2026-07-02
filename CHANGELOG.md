@@ -1,6 +1,20 @@
+## 0.4.2
+
+- fix: sanitize variables for tflint and enable storage bucket support
+
+## 0.4.1
+
+- style: fix formatting compliance for v0.4.2
+
+## 0.4.0
+
+- chore: release version 0.4.0
+- merge: pull origin dev --allow-unrelated-histories --no-rebase
+
 ## 0.3.0
 
 - Se agregan archivos dentro de workflows: terraform.yml y main.yml
+- Se incluye terraform.tfvars en el repositorio
 
 ## 0.2.1
 
