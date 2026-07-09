@@ -43,6 +43,12 @@ variable "instance_type" {
   type        = string
 }
 
+variable "ami_id" {
+  description = "AMI ID para la instancia EC2"
+  type        = string
+  default     = "ami-0c55b159cbfafe1f0"
+}
+
 variable "user_data" {
   description = "Script de inicialización para la instancia"
   type        = string
