@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+-Se verifica el funcionamiento de la infraestructura  y se sube la version final
+
 ## 0.5.0
 
 - Se añadió documentación más completa en el README para explicar el propósito del repositorio y el flujo de uso.
